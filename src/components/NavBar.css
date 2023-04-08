@@ -1,0 +1,18 @@
+nav {
+  background-color: var(--color-bg2);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  font-size: var(--font-h4);
+}
+
+nav a {
+  color: var(--color-link);
+  /* color: blue; */
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--color-link-hover);
+}
