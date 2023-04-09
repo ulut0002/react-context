@@ -1,14 +1,16 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
+import { useFavorites } from "../context/FavoriteContext";
 
 function NavBar() {
+  const [favorites, setFavorites] = useFavorites();
   return (
     <nav>
       <NavLink to="../" className="button">
-        Users
+        Users <sup></sup>
       </NavLink>
       <NavLink to="../../favorites/" className="button">
-        Favorites
+        Favorites <sup>({favorites.length})</sup>
       </NavLink>
     </nav>
   );
