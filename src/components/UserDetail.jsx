@@ -28,26 +28,23 @@ function UserDetail({ user }) {
   }
 
   return (
-    <div>
-      <p>List of Current Users</p>
-      <li className="user--container">
-        <img
-          className="user--content user--avatar"
-          src={user.avatar}
-          alt={`avatar for ${user.username}`}
-        ></img>
-        <p className="user--content user--name">{user.username}</p>
-        <p className="user--content user--email">{user.email}</p>
-        <span
-          onClick={handleFavoriteAction}
-          className={`material-icons user--fav user--content ${
-            favorited ? "favorited" : ""
-          }`}
-        >
-          {favorited ? "person_remove" : "person_add_alt_1"}
-        </span>
-      </li>
-    </div>
+    <li className="user--container">
+      <img
+        className="user--content user--avatar"
+        src={user.avatar}
+        alt={`avatar for ${user.username}`}
+      ></img>
+      <p className="user--content user--name">{user.username}</p>
+      <p className="user--content user--email">{user.email}</p>
+      <span
+        onClick={handleFavoriteAction}
+        className={`material-icons user--fav user--content ${
+          favorited ? "favorited" : ""
+        }`}
+      >
+        {favorited ? "person_remove" : "person_add_alt_1"}
+      </span>
+    </li>
   );
 }
 export default UserDetail;

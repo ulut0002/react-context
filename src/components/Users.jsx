@@ -27,7 +27,7 @@ function Users() {
 
   if (users && Array.isArray(users)) {
     return (
-      <ul>
+      <ul className="user--list">
         {users.map((user) => {
           return <UserDetail key={user.id} user={user}></UserDetail>;
         })}

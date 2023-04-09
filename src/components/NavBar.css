@@ -9,10 +9,13 @@ nav {
 
 nav a {
   color: var(--color-link);
-  /* color: blue; */
 }
 
 nav a:hover,
 nav a:focus {
   color: var(--color-link-hover);
+}
+
+nav .active {
+  color: var(--color-link-active);
 }
