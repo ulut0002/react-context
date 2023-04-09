@@ -7,7 +7,7 @@ function NavBar() {
       <NavLink to="../" className="button">
         Users
       </NavLink>
-      <NavLink to="../../fav/" className="button">
+      <NavLink to="../../favorites/" className="button">
         Favorites
       </NavLink>
     </nav>

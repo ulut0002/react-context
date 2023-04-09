@@ -116,7 +116,69 @@ select {
   --color-bg1: rgb(207, 159, 218);
   --color-bg2: rgb(214, 178, 221);
 
+  --color-bg3: rgb(206, 227, 233);
+
   --color-text-dark: #2d2929;
   --color-link: var(--color-text-dark);
   --color-link-hover: rgb(147, 44, 19);
+}
+
+.user--container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 1fr minmax(
+      min-content,
+      max-content
+    );
+  grid-template-rows: repeat(3, minmax(min-content, max-content));
+  column-gap: 2rem;
+  background-color: var(--color-bg3);
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  max-width: min(45rem, 100%);
+}
+
+.user--container .user--avatar {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  max-height: 7rem;
+  opacity: 0.3;
+}
+
+.user--container .user--name {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.user--container .user--email {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.user--container .user--fav {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.user--container .user--fav:hover {
+  color: blue;
+}
+
+.favorited {
+  color: orangered;
+}
+
+.user--content {
+  /* border: solid; */
 }
