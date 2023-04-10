@@ -4,14 +4,14 @@ import UserDetail from "./UserDetail";
 function Favorites() {
   const [favorites, setFavorites] = useFavorites();
   if (!favorites || !Array.isArray(favorites) || favorites.length === 0) {
-    return <div>You favorites list is empty</div>;
+    return <div className="highlight-center">You favorites list is empty</div>;
   }
   return (
-    <div>
+    <ul className="user--list">
       {favorites.map((fav) => {
-        return <UserDetail key={fav.id} user={fav}></UserDetail>;
+        return <UserDetail key={fav.uid} user={fav}></UserDetail>;
       })}
-    </div>
+    </ul>
   );
 }
 export default Favorites;
