@@ -15,13 +15,14 @@ Demo: https://serdar-react-context.netlify.app/
 
 ## Introduction
 
-The React Context API provides a way to pass data through the component tree without having to pass props down manually at every level. This example demonstrates how to create and use a Context in a React application to manage global state.
+This is a school assignment focusing on React Router in a Vite environment. It uses React Context as a wrapper and local storage to keep favorite data persistent.
 
 ## Features
 
 - Demonstrates the creation of a Context
 - Shows how to provide and consume Context data
 - Includes example components that use Context to share state
+- Use Local Storage to keep data persistent.
 
 ## Installation
 
